@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notification API Monitor</title>
+  <style>
+    body { 
+      font-family: Arial, sans-serif; 
+      padding: 15px;
+      margin: 0;
+      background-color: #f9f9f9;
+      width: 300px; /* Wider layout */
+    }
+    h1, h2 {
+      margin: 0 0 15px;
+      font-size: 18px;
+      color: #333;
+    }
+    .status, .input-group, .log {
+      margin-bottom: 15px;
+    }
+    .status strong {
+      font-weight: bold;
+      color: #555;
+    }
+    #server-status {
+      color: #007BFF;
+    }
+    .input-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    .input-group input {
+      width: calc(100% - 90px); /* Adjusted to fit well with the button */
+      padding: 8px;
+      margin-right: 5px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .input-group button {
+      padding: 8px 15px;
+      border: none;
+      background-color: #007BFF;
+      color: white;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .input-group button:hover {
+      background-color: #0056b3;
+    }
+    .log {
+      background: #ffffff;
+      padding: 10px;
+      height: 200px;
+      overflow-y: auto;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+      font-family: monospace; /* For log-like appearance */
+    }
+  </style>
+</head>
+<body>
+    <h1>API Monitor</h1>
+    
+    <div class="status">
+      <strong>Server Status:</strong> <span id="server-status">Loading...</span>
+    </div>
+    
+    <div class="input-group">
+      <label for="username">Add User:</label>
+      <input type="text" id="username" placeholder="Enter username" />
+      <input type="text" id="CFID" placeholder="CFID" /> <!-- Auto-filled from cookie -->
+      <input type="text" id="CFTOKEN" placeholder="CFTOKEN" /> <!-- Auto-filled from cookie -->
+      <input type="text" id="SESSIONID" placeholder="SESSIONID" /> <!-- Auto-filled from cookie -->
+      <input type="text" id="SESSIONTOKEN" placeholder="SESSIONTOKEN" /> <!-- Auto-filled from cookie -->
+      <button id="add-user">Add</button>
+    </div>
+    
+    <h2>Live Logs</h2>
+    <div class="log" id="log-output"></div> <!-- Start with an empty logs section -->
+    
+    <script src="popup.js"></script>
+  </body>
+  </html>
