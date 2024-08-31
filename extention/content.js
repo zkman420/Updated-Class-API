@@ -7,6 +7,7 @@ async function fetchLogs() {
   } catch (error) {
     document.getElementById('log-output').textContent = "Error fetching logs";
   }
+  setTimeout(fetchLogs, 5000); // Fetch logs every 5 seconds
 }
 
 fetchLogs();

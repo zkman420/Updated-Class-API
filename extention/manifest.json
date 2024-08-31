@@ -5,7 +5,16 @@
     "action": {
       "default_popup": "popup.html"
     },
-    "permissions": ["activeTab", "scripting", "alarms", "cookies"],  
+    "permissions": [
+      "activeTab",
+      "scripting",
+      "alarms",
+      "cookies",
+      "storage"
+    ],
+    "host_permissions": [
+      "https://tassweb.salc.qld.edu.au/*"  
+     ],
     "background": {
       "service_worker": "background.js"
     },

@@ -141,6 +141,9 @@ async function fetchUniform(userID) {
 
     if (sportClass) {
       logger.info(`Sport class period: ${sportClass.period}`);
+    } else if (new Date().getDay() === 4) {
+      logger.info("It's Thursday, assuming sport uniform");
+      return "Thursday Sport";
     } else {
       logger.warn(`No sport class for userID: ${userID}`);
     }
@@ -342,6 +345,24 @@ async function sendClassNotificationAll(period) {
   });
 }
 
+async function sendUniformNotification(userID) {
+  const uniform = await fetchUniform(userID);
+  if (uniform === "Thursday Sport") {
+    try {
+      const username = await getUsername(userID);
+      if (!username) {
+        logger.warn(`No username for userID: ${userID}`);
+        return;
+      }
+      const topic = `class_notifier_${username}`;
+      const message = `Hi ${username}, remember to ware your sport uniform!`;
+      logger.info(`Sending notification: ${message}`);
+      await sendNotification(message, topic);
+    } catch (error) {
+      logger.error("Uniform notification error: " + error.message);
+    }
+  }
+}
 // Helper functions
 
 async function addUser(username, CFID, CFTOKEN, SESSIONID, SESSIONTOKEN) {
@@ -421,6 +442,7 @@ async function getUsername(userID) {
 }
 
 // Scheduled tasks
+cron.schedule("00 7 * * 1-5", () => sendUniformNotification(1)); //uniform usr id 1
 cron.schedule("55 8 * * 1-3,5", () => sendClassNotificationAll(1));
 cron.schedule("10 9 * * 4", () => sendClassNotificationAll(1));
 cron.schedule("45 9 * * 1-3,5", () => sendClassNotificationAll(2));
