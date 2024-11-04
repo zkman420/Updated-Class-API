@@ -1945,3 +1945,124 @@
 2024-08-30T01:18:44.654Z info: Found 0 classes.
 2024-08-30T01:18:44.654Z warn: No class for period 1
 2024-08-31T00:27:44.036Z info: Server running on port 3000
+2024-11-04T00:16:56.241Z info: Fetching uniform for userID: 1
+2024-11-04T00:17:26.299Z info: Fetching uniform for userID: 1
+2024-11-04T00:17:26.309Z info: Server running on port 3000
+2024-11-04T00:17:26.340Z info: Fetching class info...
+2024-11-04T00:17:26.446Z info: Found 0 classes.
+2024-11-04T00:17:26.446Z warn: No sport class for userID: 1
+2024-11-04T00:18:04.511Z info: Fetching class for period: 1, userID: 1
+2024-11-04T00:18:04.514Z info: POST /fetch-class-info/1/1
+2024-11-04T00:18:04.550Z info: Fetching class info...
+2024-11-04T00:18:04.724Z info: Found 0 classes.
+2024-11-04T00:18:04.724Z warn: No class for period 1
+2024-11-04T00:19:34.344Z info: Fetching uniform for userID: 1
+2024-11-04T00:19:34.355Z info: Server running on port 3000
+2024-11-04T00:19:34.395Z info: Fetching class info...
+2024-11-04T00:19:34.487Z info: Found 0 classes.
+2024-11-04T00:19:34.487Z warn: No sport class for userID: 1
+2024-11-04T00:21:32.130Z info: Fetching uniform for userID: 1
+2024-11-04T00:21:32.138Z info: Server running on port 3000
+2024-11-04T00:21:32.155Z info: Fetching class info...
+2024-11-04T00:21:32.619Z info: Found 8 classes.
+2024-11-04T00:21:32.619Z info: Sport class period: Period 5
+2024-11-04T00:21:48.324Z info: Fetching class for period: 1, userID: 1
+2024-11-04T00:21:48.329Z info: POST /fetch-class-info/1/1
+2024-11-04T00:21:48.355Z info: Fetching class info...
+2024-11-04T00:21:48.818Z info: Found 8 classes.
+2024-11-04T00:21:48.818Z info: Class found: {"period":"Period 1","class":"11 General Maths","location":"G3","teacher":"Benjamin Coleman"}
+2024-11-04T00:21:49.612Z info: Notification sent to class_notifier_Kian
+2024-11-04T00:26:16.120Z info: Fetching uniform for userID: 1
+2024-11-04T00:26:16.125Z info: Server running on port 3000
+2024-11-04T00:26:16.167Z info: Fetching class info...
+2024-11-04T00:26:16.707Z info: Found 8 classes.
+2024-11-04T00:26:16.707Z info: Sport class period: Period 5
+2024-11-04T00:27:28.983Z info: GET /
+2024-11-04T00:27:29.007Z info: SQL check successful.
+2024-11-04T00:28:41.661Z info: Fetching class for period: 1, userID: 1
+2024-11-04T00:28:41.663Z info: POST /fetch-class-info/1/1
+2024-11-04T00:28:41.700Z info: Fetching class info...
+2024-11-04T00:28:42.163Z info: Found 8 classes.
+2024-11-04T00:28:42.163Z info: Class found: {"period":"Period 1","class":"11 General Maths","location":"G3","teacher":"Benjamin Coleman"}
+2024-11-04T00:28:42.898Z info: Notification sent to class_notifier_Kian
+2024-11-04T00:30:03.094Z info: Fetching uniform for userID: 1
+2024-11-04T00:30:03.107Z info: Server running on port 3000
+2024-11-04T00:30:03.195Z info: Fetching class info...
+2024-11-04T00:30:03.806Z info: Found 8 classes.
+2024-11-04T00:30:03.806Z info: Sport class period: Period 5
+2024-11-04T00:30:28.090Z info: Fetching uniform for userID: 1
+2024-11-04T00:30:28.094Z info: POST /fetch-uniform/1
+2024-11-04T00:30:28.135Z info: Fetching class info...
+2024-11-04T00:30:28.581Z info: Found 8 classes.
+2024-11-04T00:30:28.581Z info: Sport class period: Period 5
+2024-11-04T00:30:28.581Z info: Uniform period: Period 5
+2024-11-04T00:31:25.349Z info: Fetching uniform for userID: 1
+2024-11-04T00:31:25.358Z info: Server running on port 3000
+2024-11-04T00:31:25.392Z info: Fetching class info...
+2024-11-04T00:31:25.906Z info: Found 8 classes.
+2024-11-04T00:31:25.906Z info: Sport class period: Period 5
+2024-11-04T00:32:00.401Z info: Fetching uniform for userID: 1
+2024-11-04T00:32:00.435Z info: Fetching class info...
+2024-11-04T00:32:00.874Z info: Found 8 classes.
+2024-11-04T00:32:00.874Z info: Sport class period: Period 5
+2024-11-04T00:32:31.783Z info: Fetching uniform for userID: 1
+2024-11-04T00:32:31.792Z info: Fetching uniform for userID: 1
+2024-11-04T00:32:31.793Z info: Server running on port 3000
+2024-11-04T00:32:31.863Z info: Fetching class info...
+2024-11-04T00:32:31.888Z info: Fetching class info...
+2024-11-04T00:32:32.381Z info: Found 8 classes.
+2024-11-04T00:32:32.381Z info: Sport class period: Period 5
+2024-11-04T00:32:32.397Z info: Found 8 classes.
+2024-11-04T00:32:32.397Z info: Sport class period: Period 5
+2024-11-04T00:33:22.938Z info: Fetching uniform for userID: 1
+2024-11-04T00:33:22.947Z info: Server running on port 3000
+2024-11-04T00:33:22.978Z info: Fetching class info...
+2024-11-04T00:33:23.564Z info: Found 8 classes.
+2024-11-04T00:33:23.565Z info: Sport class period: Period 5
+2024-11-04T00:34:31.424Z info: Fetching uniform for userID: 1
+2024-11-04T00:34:31.432Z info: Server running on port 3000
+2024-11-04T00:34:31.467Z info: Fetching class info...
+2024-11-04T00:34:32.041Z info: Found 8 classes.
+2024-11-04T00:34:32.041Z info: Sport class period: Period 5
+2024-11-04T01:24:43.056Z info: Fetching uniform for userID: 1
+2024-11-04T01:24:43.081Z info: Server running on port 3000
+2024-11-04T01:24:43.139Z info: Fetching class info...
+2024-11-04T01:24:45.299Z info: Found 8 classes.
+2024-11-04T01:24:45.300Z info: Sport class period: Period 5
+2024-11-04T01:24:45.302Z info: Sending notification: Hi Kian, remember to ware your sport uniform!
+2024-11-04T01:24:46.159Z info: Notification sent to class_notifier_Kian
+2024-11-04T01:25:27.009Z info: Fetching uniform for userID: 1
+2024-11-04T01:25:27.033Z info: Server running on port 3000
+2024-11-04T01:25:27.089Z info: Fetching class info...
+2024-11-04T01:25:29.133Z info: Found 8 classes.
+2024-11-04T01:25:29.134Z info: Sport class period: Period 5
+2024-11-04T01:25:29.162Z info: Sending notification: Hi Kian, remember to ware your sport uniform!
+2024-11-04T01:25:30.023Z info: Notification sent to class_notifier_Kian
+2024-11-04T01:26:27.927Z info: Fetching uniform for userID: 1
+2024-11-04T01:26:27.949Z info: Server running on port 3000
+2024-11-04T01:26:28.000Z info: Fetching class info...
+2024-11-04T01:26:30.168Z info: Found 8 classes.
+2024-11-04T01:26:30.169Z info: Sport class period: Period 5
+2024-11-04T01:26:30.173Z info: Sending notification: Hi Kian, remember to ware your sport uniform!
+2024-11-04T01:26:30.951Z info: Notification sent to class_notifier_Kian
+2024-11-04T01:36:59.091Z info: Fetching uniform for userID: 1
+2024-11-04T01:36:59.113Z info: Server running on port 3000
+2024-11-04T01:36:59.169Z info: Fetching class info...
+2024-11-04T01:37:01.322Z info: Found 8 classes.
+2024-11-04T01:37:01.323Z info: Sport class period: Period 5
+2024-11-04T01:37:01.326Z info: Sending notification: Good Morning Kian, remember to wear your sport uniform!
+2024-11-04T01:37:02.169Z info: Notification sent to class_notifier_Kian
+2024-11-04T01:50:00.104Z info: Notifying all users for period: 4
+2024-11-04T01:50:00.176Z info: Fetching class for period: 4, userID: 1
+2024-11-04T01:50:00.182Z info: Fetching class info...
+2024-11-04T01:50:02.634Z info: Found 8 classes.
+2024-11-04T01:50:02.635Z info: Class found: {"period":"Period 4","class":"11 Business","location":"G5","teacher":"Megan Yeo By: PGU"}
+2024-11-04T01:50:02.640Z info: Sending notification: Next class: Period 4, 11 Business, Megan Yeo By: PGU at G5
+2024-11-04T01:50:03.622Z info: Notification sent to class_notifier_Kian
+2024-11-04T04:20:00.837Z info: Notifying all users for period: 6
+2024-11-04T04:20:01.009Z info: Fetching class for period: 6, userID: 1
+2024-11-04T04:20:01.015Z info: Fetching class info...
+2024-11-04T04:20:01.540Z info: Found 8 classes.
+2024-11-04T04:20:01.540Z info: Class found: {"period":"Period 6","class":"11 Economics","location":"J1","teacher":"Amanda Tanks"}
+2024-11-04T04:20:01.542Z info: Sending notification: Next class: Period 6, 11 Economics, Amanda Tanks at J1
+2024-11-04T04:20:02.363Z info: Notification sent to class_notifier_Kian

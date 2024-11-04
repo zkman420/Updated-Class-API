@@ -79,6 +79,7 @@ async function fetchClassInfo(cookies) {
 
     const $ = cheerio.load(response.data);
     logger.debug("HTML received.");
+    
 
     const classes = [];
 
@@ -347,7 +348,8 @@ async function sendClassNotificationAll(period) {
 
 async function sendUniformNotification(userID) {
   const uniform = await fetchUniform(userID);
-  if (uniform === "Thursday Sport") {
+  console.log(uniform)
+  if (uniform && uniform.includes("Period")) {
     try {
       const username = await getUsername(userID);
       if (!username) {
@@ -355,7 +357,17 @@ async function sendUniformNotification(userID) {
         return;
       }
       const topic = `class_notifier_${username}`;
-      const message = `Hi ${username}, remember to ware your sport uniform!`;
+      const message = `Good Morning ${username}, remember to wear your sport uniform!`;
+      logger.info(`Sending notification: ${message}`);
+      await sendNotification(message, topic);
+    } catch (error) {
+      logger.error("Uniform notification error: " + error.message);
+    }
+  } else if (uniform === "Thursday Sport") {
+    try {
+      const username = await getUsername(userID);
+      const topic = `class_notifier_${username}`;
+      const message = `Good Morning ${username}, remember to wear your sport uniform!`;
       logger.info(`Sending notification: ${message}`);
       await sendNotification(message, topic);
     } catch (error) {
@@ -440,7 +452,7 @@ async function getUsername(userID) {
     });
   });
 }
-
+sendUniformNotification(1)
 // Scheduled tasks
 cron.schedule("00 7 * * 1-5", () => sendUniformNotification(1)); //uniform usr id 1
 cron.schedule("55 8 * * 1-3,5", () => sendClassNotificationAll(1));
@@ -453,6 +465,16 @@ cron.schedule("45 11 * * 4", () => sendClassNotificationAll(4));
 cron.schedule("30 13 * * 1-3,5", () => sendClassNotificationAll(5));
 cron.schedule("00 13 * * 4", () => sendClassNotificationAll(5));
 cron.schedule("20 14 * * 1-3,5", () => sendClassNotificationAll(6));
+
+
+
+
+
+
+
+
+// work 
+
 
 // Start the server
 const PORT = process.env.PORT || 3000;
