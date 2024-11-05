@@ -2066,3 +2066,54 @@
 2024-11-04T04:20:01.540Z info: Class found: {"period":"Period 6","class":"11 Economics","location":"J1","teacher":"Amanda Tanks"}
 2024-11-04T04:20:01.542Z info: Sending notification: Next class: Period 6, 11 Economics, Amanda Tanks at J1
 2024-11-04T04:20:02.363Z info: Notification sent to class_notifier_Kian
+2024-11-04T22:55:00.098Z info: Notifying all users for period: 1
+2024-11-04T22:55:00.167Z info: Fetching class for period: 1, userID: 1
+2024-11-04T22:55:00.172Z info: Fetching class info...
+2024-11-04T22:55:00.878Z info: Found 7 classes.
+2024-11-04T22:55:00.878Z info: Class found: {"period":"Period 1","class":"11 Sport and Recreation","location":"CILA","teacher":"Christophe Tanguy"}
+2024-11-04T22:55:00.879Z info: Sending notification: Next class: Period 1, 11 Sport and Recreation, Christophe Tanguy at CILA
+2024-11-04T22:55:01.854Z info: Notification sent to class_notifier_Kian
+2024-11-04T23:45:00.310Z info: Notifying all users for period: 2
+2024-11-04T23:45:00.361Z info: Fetching class for period: 2, userID: 1
+2024-11-04T23:45:00.365Z info: Fetching class info...
+2024-11-04T23:45:01.053Z info: Found 7 classes.
+2024-11-04T23:45:01.053Z info: Class found: {"period":"Period 2","class":"11 Sport and Recreation","location":"CILA","teacher":"Christophe Tanguy"}
+2024-11-04T23:45:01.056Z info: Sending notification: Next class: Period 2, 11 Sport and Recreation, Christophe Tanguy at CILA
+2024-11-04T23:45:02.018Z info: Notification sent to class_notifier_Kian
+2024-11-05T01:00:00.023Z info: Notifying all users for period: 3
+2024-11-05T01:00:00.069Z info: Fetching class for period: 3, userID: 1
+2024-11-05T01:00:00.073Z info: Fetching class info...
+2024-11-05T01:00:00.878Z info: Found 7 classes.
+2024-11-05T01:00:00.878Z info: Class found: {"period":"Period 3","class":"11 Business","location":"G5","teacher":"Megan Yeo"}
+2024-11-05T01:00:00.882Z info: Sending notification: Next class: Period 3, 11 Business, Megan Yeo at G5
+2024-11-05T01:00:01.798Z info: Notification sent to class_notifier_Kian
+2024-11-05T06:29:38.877Z info: Fetching uniform for userID: 1
+2024-11-05T06:29:38.887Z info: Server running on port 3000
+2024-11-05T06:29:38.914Z error: Cookie fetch error: Unknown database 'classes-api'
+2024-11-05T06:29:50.285Z info: Fetching uniform for userID: 1
+2024-11-05T06:29:50.290Z info: Server running on port 3000
+2024-11-05T06:29:50.327Z info: Fetching class info...
+2024-11-05T06:29:50.999Z info: Found 7 classes.
+2024-11-05T06:29:51.000Z info: Sport class period: Period 1
+2024-11-05T06:29:51.001Z info: Sending notification: Good Morning Kian, remember to wear your sport uniform!
+2024-11-05T06:29:52.005Z info: Notification sent to class_notifier_Kian
+2024-11-05T06:34:55.945Z info: Fetching uniform for userID: 1
+2024-11-05T06:34:55.955Z info: Server running on port 3000
+2024-11-05T06:34:56.001Z info: Fetching class info...
+2024-11-05T06:34:56.697Z info: Found 7 classes.
+2024-11-05T06:34:56.697Z info: Sport class period: Period 1
+2024-11-05T06:34:56.699Z info: Sending notification: Good Morning Kian, remember to wear your sport uniform!
+2024-11-05T06:41:06.600Z info: Fetching uniform for userID: 1
+2024-11-05T06:41:06.609Z info: Server running on port 3000
+2024-11-05T06:41:06.657Z info: Fetching class info...
+2024-11-05T06:41:07.314Z info: Found 7 classes.
+2024-11-05T06:41:07.314Z info: Sport class period: Period 1
+2024-11-05T06:41:07.317Z info: Sending notification: Good Morning Kian, remember to wear your sport uniform!
+2024-11-05T06:41:08.242Z info: Notification sent to class_notifier_Kian
+2024-11-05T06:43:42.247Z info: Fetching uniform for userID: 1
+2024-11-05T06:43:42.257Z info: Server running on port 3000
+2024-11-05T06:43:42.314Z info: Fetching class info...
+2024-11-05T06:43:43.000Z info: Found 7 classes.
+2024-11-05T06:43:43.000Z info: Sport class period: Period 1
+2024-11-05T06:43:43.002Z info: Sending notification: Good Morning Kian, remember to wear your sport uniform!
+2024-11-05T06:43:44.122Z info: Notification sent to class_notifier_Kian

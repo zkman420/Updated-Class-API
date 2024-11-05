@@ -7,6 +7,13 @@ const mysql = require("mysql2");
 const fs = require('fs');
 const winston = require("winston");
 const app = express();
+const io = require('@pm2/io')
+
+const realtimeUser = io.metric({
+  name: 'Realtime user',
+})
+
+realtimeUser.set(42)
 
 // Initialize Winston Logger
 const logger = winston.createLogger({
@@ -44,6 +51,7 @@ app.use((req, res, next) => {
   );
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
+  currentReqs.inc();
   logger.info(`${req.method} ${req.url}`);
 });
 

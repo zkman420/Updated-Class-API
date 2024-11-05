@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@pm2/io": "^6.0.1",
     "axios": "^1.7.5",
     "cheerio": "^1.0.0",
     "express": "^4.19.2",
