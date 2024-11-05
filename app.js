@@ -9,11 +9,10 @@ const winston = require("winston");
 const app = express();
 const io = require('@pm2/io')
 
-const realtimeUser = io.metric({
-  name: 'Realtime user',
-})
-
-realtimeUser.set(42)
+const currentReqs = io.counter({
+  name: 'Realtime request count',
+  id: 'app/realtime/requests'
+});
 
 // Initialize Winston Logger
 const logger = winston.createLogger({
@@ -50,8 +49,8 @@ app.use((req, res, next) => {
     "OPTIONS, GET, POST, PUT, PATCH, DELETE"
   );
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  next();
   currentReqs.inc();
+  next();
   logger.info(`${req.method} ${req.url}`);
 });
 
