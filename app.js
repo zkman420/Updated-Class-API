@@ -22,7 +22,7 @@ const logger = winston.createLogger({
     winston.format.printf(({ timestamp, level, message }) => {
       return `${timestamp} ${level}: ${message}`;
     })
-  ),
+  ), 
   transports: [
     new winston.transports.Console(),
     new winston.transports.File({ filename: "server.log" }),
@@ -95,7 +95,7 @@ async function fetchClassInfo(cookies) {
       const classInfo = $(element).find("td").eq(1).text().trim().replace(/[\n\t]/g, "").replace(/\s*\[.*?\]\s*\d+\s*[A-Z]*$/, "");
       const location = $(element).find("td").eq(2).text().trim().replace(/[\n\t]/g, "");
       const teacher = $(element).find("td").eq(3).text().trim().replace(/[\n\t]/g, "");
-
+      
       if (period && classInfo && location && teacher) {
         const classData = { period, class: classInfo, location, teacher };
         logger.debug(`Parsed: ${JSON.stringify(classData)}`);
@@ -459,9 +459,8 @@ async function getUsername(userID) {
     });
   });
 }
-sendUniformNotification(1)
-// Scheduled tasks
-cron.schedule("00 7 * * 1-5", () => sendUniformNotification(1)); //uniform usr id 1
+
+cron.schedule("00 7 * * 1-5", () => sendUniformNotification(1)); 
 cron.schedule("55 8 * * 1-3,5", () => sendClassNotificationAll(1));
 cron.schedule("10 9 * * 4", () => sendClassNotificationAll(1));
 cron.schedule("45 9 * * 1-3,5", () => sendClassNotificationAll(2));

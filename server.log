@@ -2197,3 +2197,46 @@
 2024-11-05T06:53:25.609Z info: Found 7 classes.
 2024-11-05T06:53:25.609Z info: Class found: {"period":"Period 1","class":"11 Sport and Recreation","location":"CILA","teacher":"Christophe Tanguy"}
 2024-11-05T06:53:26.519Z info: Notification sent to class_notifier_Kian
+2024-11-05T23:11:57.510Z info: Server running on port 3000
+2024-11-06T04:33:46.191Z info: Server running on port 3000
+2024-11-06T04:34:02.532Z info: Fetching class for period: 1, userID: 1
+2024-11-06T04:34:02.538Z info: POST /fetch-class-info/1/1
+2024-11-06T04:34:02.624Z info: Fetching class info...
+2024-11-06T04:34:05.167Z error: Fetch error: teacherCell is not defined
+2024-11-06T04:34:05.167Z error: Class fetch error: teacherCell is not defined
+2024-11-06T04:34:05.167Z error: Class fetch error: teacherCell is not defined
+2024-11-06T04:38:44.963Z info: Server running on port 3000
+2024-11-06T04:38:49.413Z info: Fetching class for period: 1, userID: 1
+2024-11-06T04:38:49.420Z info: POST /fetch-class-info/1/1
+2024-11-06T04:38:49.483Z info: Fetching class info...
+2024-11-06T04:38:51.275Z info: Found 7 classes.
+2024-11-06T04:38:51.275Z info: Class found: {"period":"Period 1","class":"11 Economics","location":"J1","teacher":"Amanda Tanks"}
+2024-11-06T04:38:52.094Z info: Notification sent to class_notifier_Kian
+2024-11-06T04:39:03.383Z info: Fetching class for period: 1, userID: 4
+2024-11-06T04:39:03.386Z info: POST /fetch-class-info/1/4
+2024-11-06T04:39:03.424Z warn: No cookies found.
+2024-11-06T04:39:03.425Z info: Fetching class info...
+2024-11-06T04:39:03.425Z warn: No cookies provided.
+2024-11-06T04:39:03.426Z error: Class fetch error: Cookies required.
+2024-11-06T04:39:03.426Z error: Class fetch error: Cookies required.
+2024-11-06T04:39:07.949Z info: Fetching class for period: 4, userID: 1
+2024-11-06T04:39:07.949Z info: POST /fetch-class-info/4/1
+2024-11-06T04:39:07.956Z info: Fetching class info...
+2024-11-06T04:39:09.708Z info: Found 7 classes.
+2024-11-06T04:39:09.708Z info: Class found: {"period":"Period 4","class":"11 Essential English","location":"LB","teacher":"Rachel Kimlin By: EBR"}
+2024-11-06T04:39:10.419Z info: Notification sent to class_notifier_Kian
+2024-11-06T04:39:44.678Z info: Server running on port 3000
+2024-11-06T04:39:46.280Z info: Fetching class for period: 4, userID: 1
+2024-11-06T04:39:46.289Z info: POST /fetch-class-info/4/1
+2024-11-06T04:39:46.340Z info: Fetching class info...
+2024-11-06T04:39:48.168Z info: Found 7 classes.
+2024-11-06T04:39:48.168Z info: Class found: {"period":"Period 4","class":"11 Essential English","location":"LB","teacher":"Rachel Kimlin By: EBR"}
+2024-11-06T04:39:48.886Z info: Notification sent to class_notifier_Kian
+2024-11-06T04:40:27.140Z info: Server running on port 3000
+2024-11-07T00:05:20.394Z info: Server running on port 3000
+2024-11-07T00:05:35.010Z info: Fetching class for period: 2, userID: 2
+2024-11-07T00:05:35.015Z info: POST /fetch-class-info/2/2
+2024-11-07T00:05:35.077Z info: Fetching class info...
+2024-11-07T00:05:35.606Z info: Found 7 classes.
+2024-11-07T00:05:35.607Z info: Class found: {"period":"Period 2","class":"11 General Maths","location":"G3","teacher":"Benjamin Coleman"}
+2024-11-07T00:05:36.417Z info: Notification sent to class_notifier_jack
